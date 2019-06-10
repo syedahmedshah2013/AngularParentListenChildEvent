@@ -1,0 +1,4 @@
+<h1>My Voter</h1>
+<h2>Will AI TAKE OVER MANKIND?</h2>
+<h4>Agree: {{agreed}}, Disagree: {{disagreed}}</h4>
+<app-child *ngFor="let name of names" [name]="name" (onVoted)="onVoted($event)"></app-child>
